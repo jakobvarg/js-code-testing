@@ -1,7 +1,0 @@
-const accountID = 14452
-let accountEmail = "jakobvargis@gmail.com"
-var accountPassword = "a324#@!"
-accountCity = "Kochi"
-
-accountID = 21442
-console.log(accountID);
