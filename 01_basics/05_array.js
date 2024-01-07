@@ -25,3 +25,12 @@ const arrFruitBasket = arrFruits.slice(3,6)
 console.log("The fruits added to the arrFruitsBasket are: "+arrFruitBasket);
 
 //every(function()) returns if all the values provided in the array meets a criteria or not. The value returned is boolean (True/False)
+const arrAges = [22, 17, 19, 21, 18, 25]
+let eligible = arrAges.every(checkTeamEligibility)
+
+//here the value returned is false as the array arrAges contains a value under 18. But if all values were either greater or equal to 18 then the value printed below would have been true.
+console.log(eligible);
+
+function checkTeamEligibility(age) {
+    return age >= 18;
+}
