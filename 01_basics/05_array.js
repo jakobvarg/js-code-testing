@@ -34,3 +34,25 @@ console.log(eligible);
 function checkTeamEligibility(age) {
     return age >= 18;
 }
+
+//create a new array to hold the names of all the fruits inside one array
+console.log(arrFruits);
+console.log(arrFruitBasket);
+
+//here we will concatnate arrFruits with arrFruitBasket into a new arry arrAllFruits
+const arrAllFruits = arrFruitBasket.concat(arrFruits)
+console.log("All the fruits that me and my friends brought are: "+arrAllFruits)
+
+//but nowadays developers use the 'spread' operator '...' which is more easy and widely used by the younger generation
+
+const marvelHeros = ["Batman", "Superman", "Flash", "Wonderwoman"]
+const dcHeros = ["Ironman", "Thor", "Black Widow", "Captain America"]
+
+const newHeros = [...marvelHeros, ...dcHeros]
+console.log("The new heros of the world are: "+newHeros);
+
+//in certain cases there will be instances of of an array within an array then we use the flat() method to display or access these arrays
+
+const arrWithin = [1,2,3, [4,5], [6,7,[8,9,10,[11,12,13]]]]
+const arrFlat = arrWithin.flat(Infinity)
+console.log("The flat out put of arrays within a array "+arrFlat);
