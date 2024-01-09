@@ -17,6 +17,8 @@ console.log(person.fullName());
 
 //complex objects with objects inside objects
 
+console.log("\n\n"+"Car brands and their models"+"\n")
+
 const myCars = {
     name: "Jakob",
     age: 48,
@@ -30,15 +32,13 @@ const myCars = {
 // console.log(myCars.cars[0].name);
 // console.log(myCars.cars[0].models[0]);
 
-let brandName = ""
-let modelName = ""
-
 for(let x in myCars.cars) {
-    brandName += myCars.cars[x].name + "\n"
-    for(let y in myCars.cars[x].models) {
-        modelName += myCars.cars[x].models[y] + "\n"
-    }
+    console.log(myCars.cars[x].name)
+        for(let y in myCars.cars[x].models) {
+           console.log(" "+myCars.cars[x].models[y])
+        }
+    console.log("\n")
 }
 
-console.log(brandName);
-console.log(modelName);
+// console.log(brandName);
+// console.log(modelName);
