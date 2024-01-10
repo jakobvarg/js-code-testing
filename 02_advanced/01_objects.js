@@ -40,5 +40,33 @@ for(let x in myCars.cars) {
     console.log("\n")
 }
 
-// console.log(brandName);
-// console.log(modelName);
+//how to convert objects to JSON
+
+const myBooks = {
+    name: "To Kill a Mocking Bird",
+    author: "Harper Lee",
+    datePublished: new Date()
+}
+
+console.log(myBooks);
+
+const myJsn = JSON.stringify(myBooks)
+console.log(myJsn);
+
+// to convert an object with a function to JSON
+// you need to convert that function into an string
+
+const myTestObjFun = {
+    name: "Samson",
+    age: function() {
+        return 49
+    }
+}
+
+//we do this to convert the function to string and in turn
+//to be able to convert the object into JSON
+
+myTestObjFun.age = myTestObjFun.age.toString()
+
+const strFuncInObj = JSON.stringify(myTestObjFun)
+console.log(myTestObjFun);
